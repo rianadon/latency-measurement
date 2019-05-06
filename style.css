@@ -31,3 +31,11 @@ section {
     font-size: 1.2em;
     font-family: sans-serif;
 }
+
+tr:nth-child(4n) td {
+    border-bottom: 8px solid red;
+}
+
+td:nth-child(4n+1) {
+    border-right: 8px solid red;
+}
