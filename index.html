@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latency measurement</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="time">
+        <span id="time"></span>
+    </section>
+    <section class="squares">
+        <table class="squaretable">
+            <thead>
+                <tr id="squarehead"></tr>
+            </thead>
+            <tbody id="squarebody">
+            </tbody>
+        </table>
+    </section>
+    <section class="results">
+        <div>Average error: <span id="diffavg">#</span> ms</div>
+        <div>Max error: <span id="diffmax">#</span> ms</div>
+        <div>Min error: <span id="diffmin">#</span> ms</div>
+    </section>
+    <section class="description">
+        A common way to measure camera latency is to take a picture of a millisecond timer. However, if the shutter stays open long enough, the timer numbers may blend together. This site uses a series of squares to measure the number of milliseconds so readings never overlap. So your slow-shuttered camera <i>should</i> take better pictures :)
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
